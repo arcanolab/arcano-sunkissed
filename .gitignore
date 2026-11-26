@@ -1,0 +1,7 @@
+*.bak
+*.zip
+Thumbs.db
+desktop.ini
+packs/*/LOCK
+packs/*/LOG
+packs/*/LOG.old

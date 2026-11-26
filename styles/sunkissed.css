@@ -1,0 +1,108 @@
+/* Sunkissed (Arcano Lab) — estilo dos diários (as mesmas classes .aw-* dos diários de Westruun) */
+/* ===================== Diários v3 — leitura rápida (.aw-doc) ===================== */
+.aw-doc { --aw-papel: #f7f1e3; --aw-tinta: #2b2118; --aw-suave: #6b5a45; --aw-ouro: #9a7a2c; --aw-azul: #1e3a6e; --aw-linha: #d9cba8;
+  background: var(--aw-papel); color: var(--aw-tinta); padding: 14px 18px 18px; border-radius: 8px; border: 1px solid var(--aw-linha);
+  font-size: 15px; line-height: 1.5; }
+.aw-doc p { margin: 0 0 8px; }
+.aw-doc h2 { font-family: "IM Fell English SC", serif; color: var(--aw-azul); font-size: 1.3em; margin: 18px 0 6px; padding-bottom: 2px;
+  border-bottom: 2px solid var(--aw-ouro); border-top: none; }
+.aw-doc h3 { font-family: "IM Fell English SC", serif; color: var(--aw-azul); font-size: 1.1em; margin: 12px 0 4px; border: none; }
+.aw-doc h4 { margin: 0 0 4px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--aw-suave); border: none; }
+.aw-doc a.content-link { background: #ece2c8; border-color: #c9b88e; color: var(--aw-azul); }
+.aw-cab { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.aw-chip { display: inline-block; padding: 1px 9px; border-radius: 999px; font-size: 0.78em; font-weight: 600; letter-spacing: 0.02em;
+  background: #e9dfc6; color: var(--aw-tinta); border: 1px solid #cdbb91; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
+.aw-cab .aw-chip { margin-left: 0; }
+.aw-chip.aw-tipo { background: #dfe6f2; border-color: #9fb0cf; color: var(--aw-azul); }
+.aw-chip.aw-ala { background: #efe4c4; border-color: #c9a24c; }
+.aw-chip.aw-p0 { background: #dcefd8; border-color: #8fc283; color: #255a1c; }
+.aw-chip.aw-p1 { background: #eef1cf; border-color: #b9c26b; color: #4d5514; }
+.aw-chip.aw-p2 { background: #fbe6c4; border-color: #e0a54b; color: #7a4a06; }
+.aw-chip.aw-p3 { background: #f7d2c8; border-color: #d0735c; color: #7a210c; }
+.aw-chip.aw-p4 { background: #3a1010; border-color: #7a1f1f; color: #ffd9d0; }
+.aw-chip.aw-of { background: #e6dcf3; border-color: #a78bd0; color: #4b2c7a; }
+.aw-chip.aw-v { background: #dcefd8; border-color: #8fc283; color: #255a1c; margin: 0; }
+.aw-chip.aw-f { background: #f3dcdc; border-color: #cf8d8d; color: #7a2020; margin: 0; }
+.aw-resumo { font-family: "IM Fell English", serif; font-style: italic; font-size: 1.18em; line-height: 1.35; color: #3b2d1d;
+  border-left: 4px solid var(--aw-ouro); padding: 2px 0 2px 12px; margin: 4px 0 12px !important; }
+.aw-fatos { width: 100%; border-collapse: collapse; margin: 0 0 6px; background: #fbf7ec; border: 1px solid var(--aw-linha); border-radius: 6px; overflow: hidden; }
+.aw-fatos th, .aw-fatos td { padding: 5px 10px; border-bottom: 1px solid #eadfc4; text-align: left; vertical-align: top; background: none; color: var(--aw-tinta); }
+.aw-fatos th { width: 30%; font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--aw-suave); font-weight: 600; white-space: nowrap; }
+.aw-fatos tr:last-child th, .aw-fatos tr:last-child td { border-bottom: none; }
+.aw-ler { margin: 4px 0 8px; padding: 12px 16px; background: #efe3c4; border: 1px solid #d6c08a; border-left: 5px solid #8a6a22; border-radius: 6px;
+  font-family: "IM Fell English", serif; font-size: 1.12em; line-height: 1.55; color: #2e2213; font-style: normal; }
+.aw-ler p:last-child { margin-bottom: 0; }
+.aw-sentidos { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; }
+.aw-sent { background: #fbf7ec; border: 1px solid var(--aw-linha); border-radius: 6px; padding: 8px 10px; }
+.aw-sent p { margin: 0; font-size: 0.95em; }
+.aw-npcs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+.aw-npc { display: flex; gap: 10px; align-items: flex-start; background: #fbf7ec; border: 1px solid var(--aw-linha); border-radius: 8px; padding: 8px; }
+.aw-npc img { width: 64px; height: 64px; object-fit: cover; object-position: 50% 12%; border-radius: 50%; border: 2px solid var(--aw-ouro); flex: none; background: #e9dfc6; }
+.aw-npc-txt { min-width: 0; }
+.aw-npc-n { font-weight: 700; }
+.aw-npc-p { font-size: 0.88em; color: var(--aw-suave); }
+.aw-npc-f { font-family: "IM Fell English", serif; font-style: italic; font-size: 0.95em; margin-top: 3px; }
+.aw-npc-l { font-size: 0.85em; margin-top: 4px; }
+.aw-base { font-size: 0.85em; color: var(--aw-suave); }
+.aw-tabela { width: 100%; border-collapse: collapse; background: #fbf7ec; border: 1px solid var(--aw-linha); }
+.aw-tabela th { background: #e7dab8; color: var(--aw-tinta); text-align: left; padding: 5px 10px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.04em; }
+.aw-tabela td { padding: 5px 10px; border-top: 1px solid #eadfc4; color: var(--aw-tinta); vertical-align: top; }
+.aw-tabela td:last-child { white-space: nowrap; font-weight: 600; width: 1%; }
+.aw-tabela tr:nth-child(even) td, .aw-rumores tr:nth-child(even) td { background: #f4ecd8; }
+.aw-regra { background: #e8eef7; border: 1px solid #b7c6df; border-left: 5px solid var(--aw-azul); border-radius: 6px; padding: 10px 14px; }
+.aw-regra p:last-child, .aw-segredo p:last-child { margin-bottom: 0; }
+.aw-regra h3 { margin-top: 6px; }
+.aw-lista { margin: 0; padding-left: 20px; }
+.aw-lista li { margin-bottom: 3px; }
+.aw-segredo { background: #ece3f4; border: 1px solid #c4b0dc; border-left: 5px solid #5b3a8a; border-radius: 6px; padding: 10px 14px; }
+.aw-gancho { background: #fbf7ec; border: 1px solid var(--aw-linha); border-left: 5px solid var(--aw-ouro); border-radius: 6px; padding: 8px 12px; margin-bottom: 8px; }
+.aw-gancho.aw-oficial { border-left-color: #5b3a8a; }
+.aw-gancho-t { margin-bottom: 4px; font-size: 1.05em; }
+.aw-gancho-t b { margin-right: 2px; }
+.aw-gancho p { margin: 0; }
+.aw-rumores { width: 100%; border-collapse: collapse; background: #fbf7ec; border: 1px solid var(--aw-linha); }
+.aw-rumores td { padding: 6px 10px; border-top: 1px solid #eadfc4; color: var(--aw-tinta); vertical-align: middle; }
+.aw-rumores td.aw-d { width: 34px; text-align: center; font-family: "IM Fell English SC", serif; font-size: 1.3em; color: var(--aw-azul); }
+.aw-rumores td.aw-vf { width: 1%; white-space: nowrap; }
+.aw-npc-cab { display: flex; gap: 14px; align-items: flex-start; }
+.aw-npc-cab > div { flex: 1; min-width: 0; }
+.aw-npc-foto { width: 130px; height: 170px; object-fit: cover; object-position: top; border-radius: 8px; border: 2px solid var(--aw-ouro); flex: none; background: #e9dfc6; }
+.aw-fala { margin: 12px 0 4px; padding: 8px 14px; background: none; border: none; border-left: 4px solid var(--aw-ouro);
+  font-family: "IM Fell English", serif; font-size: 1.25em; font-style: italic; color: #3b2d1d; }
+.aw-tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; margin-top: 10px; }
+.aw-caixa { border-radius: 6px; padding: 8px 10px; border: 1px solid var(--aw-linha); background: #fbf7ec; }
+.aw-caixa p { margin: 0; font-size: 0.95em; }
+.aw-c-quer { border-top: 4px solid #b0473c; }
+.aw-c-sabe { border-top: 4px solid var(--aw-azul); }
+.aw-c-seg { border-top: 4px solid #5b3a8a; background: #f3edf8; }
+.aw-locs { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.aw-loc { background: #fbf7ec; border: 1px solid var(--aw-linha); border-left: 4px solid var(--aw-ouro); border-radius: 6px; padding: 8px 10px; }
+.aw-loc-n { font-weight: 700; margin-bottom: 3px; }
+.aw-loc-r { font-size: 0.92em; color: #4a3b29; }
+/* tema escuro do Foundry pinta as linhas das tabelas: neutraliza dentro dos diários */
+.aw-doc table tr, .aw-doc table tbody, .aw-doc table thead { background: transparent !important; }
+.aw-doc table { color: var(--aw-tinta); }
+.aw-doc table:not(.aw-tabela) th { background: transparent; }
+.aw-doc a.content-link i { color: var(--aw-azul); }
+
+/* narração embaixo das imagens dos diários (19/11/2026) */
+.aw-diario .journal-entry-page.image figcaption { margin: 0.9em auto 0; max-width: 46em; padding: 0.7em 1.1em; text-align: left; font-style: italic; font-size: 1.08em; line-height: 1.55;
+  border-left: 3px solid #b8791f; background: rgba(184, 121, 31, 0.10); border-radius: 0 6px 6px 0; }
+.aw-diario .journal-entry-page.image figcaption:empty { display: none; }
+
+/* botões de cena em cima de cada ilustração dos diários (só o mestre vê) */
+.aw-diario .aw-cena { display: flex; gap: 8px; margin: 0 0 10px; }
+.aw-diario .aw-cena button { flex: 0 1 auto; width: auto; min-height: 32px; height: auto; padding: 5px 14px; display: inline-flex; align-items: center; gap: 7px; border-radius: 5px;
+  border: 1px solid #5a3fb0; background: #7b55d6; color: #fff; font-weight: 600; font-size: 13px; cursor: var(--cursor-pointer, pointer); line-height: 1.2; }
+.aw-diario .aw-cena button:hover, .aw-diario .aw-cena button:focus-visible { background: #9a7bea; border-color: #d9b45a; box-shadow: 0 0 6px rgba(217, 180, 90, 0.6); outline: none; }
+.aw-diario .aw-cena button[data-aw-cena="ver"], .aw-diario .aw-cena button[data-aw-cena="criar"] { background: transparent; color: #4b2c7a; border-color: #7b55d6; }
+.aw-diario .aw-cena button[data-aw-cena="ver"]:hover, .aw-diario .aw-cena button[data-aw-cena="criar"]:hover { background: rgba(123, 85, 214, 0.15); }
+.aw-diario.theme-dark .aw-cena button[data-aw-cena="ver"], .aw-diario.theme-dark .aw-cena button[data-aw-cena="criar"] { color: #d9c8ff; }
+
+/* assinatura do Arcano Lab no fim das configurações do módulo */
+.arcano-westruun-painel.aw-cfg-assinatura { margin-top: 14px; color: #ece7f5; }
+.arcano-westruun-painel.aw-cfg-assinatura .aw-assinatura { margin: 0; }
+
+/* aviso de mapa de batalha que ainda vai ser lançado (na Descrição do local) */
+.aw-embreve { margin: 1em 0 0; padding: .6em .9em; border: 1px solid #c9a227; border-left-width: 4px; border-radius: 6px; background: rgba(124, 77, 255, .08); }
+.aw-embreve a { font-weight: bold; }
